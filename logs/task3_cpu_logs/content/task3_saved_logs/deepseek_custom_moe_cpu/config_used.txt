@@ -1,0 +1,16 @@
+model_name=deepseek-custom
+hardware=cpu
+dataset_type=synthetic
+steps=50
+max_target_length=512
+per_device_batch_size=1
+num_experts=16
+num_experts_per_tok=2
+shared_experts=1
+megablox=False
+sparse_matmul=False
+attention=dot_product
+use_tokamax_splash=False
+engram_layers=[]
+use_indexer=False
+enable_checkpointing=false

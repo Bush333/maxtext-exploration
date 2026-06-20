@@ -1,0 +1,11 @@
+completed step: 49
+seconds: 0.040
+TFLOP/s/device: 14.464
+Tokens/s/device: 12944.329
+total_weights: 512
+loss: 2.083
+number parameters: 0.308 billion
+GPU: NVIDIA A100-SXM4-80GB
+JAX: 0.8.1
+JAXLIB: 0.8.1
+MaxText: 0.2.1
