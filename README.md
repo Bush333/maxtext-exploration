@@ -45,18 +45,32 @@ Synthetic data was used for all experiments.
 ```text
 .
 ├── notebooks/
-│   ├── task2_qwen_dense.ipynb
-│   ├── task3_deepseek_moe.ipynb
+│   ├── qwen_0p6b_cpu.ipynb
+│   ├── qwen_0p6b_tpu.ipynb
+│   ├── qwen_1p7b_tpu.ipynb
+│   ├── task3_deepseek_cpu.ipynb
+│   ├── task3_deepseek_gpu.ipynb
+│   └── zent_assign.ipynb
 │
 ├── logs/
-│   ├── qwen_0.6b_gpu/
-│   ├── qwen_0.6b_tpu/
-│   ├── qwen_0.6b_cpu/
-│   ├── qwen_1.7b_gpu/
-│   ├── qwen_1.7b_tpu/
-│   ├── deepseek_moe_gpu/
-│   ├── deepseek_moe_tpu/
-│   └── deepseek_moe_cpu/
+│   ├── maxtext_gpu_results/
+│   │   ├── gpu_info.txt
+│   │   ├── qwen_0p6b_gpu_a100_50steps/
+│   │   │   └── tensorboard/
+│   │   └── qwen_1p7b_gpu_a100_50steps/
+│   │       └── tensorboard/
+│   ├── qwen_0p6b_cpu_tensorboard/
+│   │   └── content/maxtext_outputs/qwen_0p6b_cpu_50steps/tensorboard/
+│   ├── qwen_0p6b_tpu_tensorboard/
+│   │   └── content/maxtext_outputs/qwen_0p6b_tpu_50steps_bs1/tensorboard/
+│   ├── qwen_1p7b_tpu_tensorboard/
+│   │   └── content/maxtext_outputs/qwen_1p7b_tpu_50steps_len512/tensorboard/
+│   ├── task3_cpu_logs/
+│   │   └── content/task3_saved_logs/deepseek_custom_moe_cpu/
+│   ├── task3_deepseek_custom_moe_tpu_logs/
+│   │   └── content/task3_saved_logs/deepseek_custom_moe_tpu/
+│   └── task3_deepseek_gpu_logs/
+│       └── content/task3_saved_logs/deepseek_custom_moe_gpu/
 │
 ├── reports/
 │   └── benchmark_summary.md
